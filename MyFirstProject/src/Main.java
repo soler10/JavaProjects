@@ -6,8 +6,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("starting from variables");
-		
+		System.out.println("Tutorial full course");
+		// ***************** Variables ******************
 		/* Primitive data types:     Reference data type:
 		 * 8 types,                    unlimited: user defined
 		 * store data,                 stores data & address
@@ -24,7 +24,7 @@ public class Main {
 		System.out.println(x+" number is "+n);
 		*/
 		
-		//Scanner class: --> imported at the beguinning
+		// ***************** Scanner class: *****************
 		/*
 		Scanner scanner = new Scanner(System.in); 
 		System.out.println("What's your name? ");
@@ -43,28 +43,29 @@ public class Main {
 		System.out.println("Age + 4.5: "+num);
 		*/
 		
-		// Small gui: graphical user interface:
+		// ***************** Small gui: graphical user interface *****************
 		/*
 		String name = JOptionPane.showInputDialog("Enter your name");
 		JOptionPane.showMessageDialog(null,"hello "+ name);
 		int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age: ")); //parse in bc method returns string
 		JOptionPane.showMessageDialog(null, "Hello "+name+ " you have "+age);
 		*/
-		//Math library 
+		// ***************** Math library *****************
 		/*
 		double x= 22.3;
 		double y=10.0;
 		System.out.println("max "+Math.max(x, y));
 		System.out.println("sqrt of "+x + " is "+Math.sqrt(x));
 		*/
-		//Random    --> sudo-rnd variables
+		// ***************** Random    --> sudo-rnd variables *****************
 		/*
 		Random random = new Random(); 
 		int limit = 10;
 		int x = random.nextInt(limit); //nextDouble, nextBoolean etc
 		System.out.println(x);
 		*/
-		//If statements
+		// ***************** If statements *****************
+		/*
 		int x = 20;
 		if(x >= 18) {
 			System.out.println(x +" bigger than 18");
@@ -72,15 +73,59 @@ public class Main {
 		else {
 			System.out.println(x + "not bigger than 18");
 		}
-		//Switch
+		// ***************** Switch *****************
 		String day = "Friday";
 		switch(day) {
 		case "Sunday": System.out.println("it'sw sunday");
 		break; //go out from switch
 		case "Friday": System.out.println("it's Friday yeaaah");
 		break;
+		default: System.out.println("in case no match");
 		}
+		*/
+		// ***************** Logical operators ***************** 
+			//  && = AND   || = OR          ! = NOT     
+		/*
+		System.out.println("write temperature");
+		Scanner scanner = new Scanner(System.in);
+		int temp = scanner.nextInt();
+		if (temp > 18 && temp < 25) {
+			System.out.println("Air conditionate is ok");
+		}
+		if (temp < 18 || temp > 24) {
+			System.out.println("you're going crazy with the AC");
+		}
+		*/
+		// ***************** While *****************
+		/*
+		Scanner scanner = new Scanner(System.in);
+		String name= "";
+		while (name.isBlank()) {
+			System.out.print("Enter your name");
+			name = scanner.nextLine();
+		}
+		System.out.println("hello "+ name);
+		*/
+		// ***************** Do -- While *****************
+				// do loop -> the code is executed at least once!
+		/*
+		Scanner scanner = new Scanner(System.in);
+		String name= "";
+		do {
+			System.out.print("Enter your name");
+			name = scanner.nextLine();
+		} while (name.isBlank());
+		
+		System.out.println("hello "+ name);
+		}
+		*/
+		// ***************** For loops *****************
+		/*
+		for (int index = 0; index <= 10; index++) {
+			System.out.println(index);
+		}
+		*/
+		
 		
 	}
-
 }
